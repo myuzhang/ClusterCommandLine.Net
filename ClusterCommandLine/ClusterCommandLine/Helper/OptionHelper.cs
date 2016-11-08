@@ -1,14 +1,13 @@
 ﻿using System.Text;
 using System.Text.RegularExpressions;
 using ClusterCommandLine.Exceptions;
-using ClusterCommandLine.Models;
 using Newtonsoft.Json;
 
 namespace ClusterCommandLine.Helper
 {
 	internal static class OptionHelper
 	{
-		public static Option ToOption(this string[] args)
+		public static TOption ToOption<TOption>(this string[] args)
 		{
 			StringBuilder builder = new StringBuilder();
 			foreach (var s in args)
@@ -39,7 +38,7 @@ namespace ClusterCommandLine.Helper
             options = options.Replace(@"\", @"\\");
 
 			string optionJson = string.Format("{{ {0} }}", options);
-			Option option = JsonConvert.DeserializeObject<Option>(optionJson);
+            TOption option = JsonConvert.DeserializeObject<TOption>(optionJson);
 			return option;
 		}
 	}

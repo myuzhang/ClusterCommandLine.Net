@@ -1,4 +1,5 @@
-﻿using Autofac;
+﻿using System;
+using Autofac;
 
 namespace ClusterCommandLine.Parser
 {
@@ -11,8 +12,9 @@ namespace ClusterCommandLine.Parser
 		private CommandContainer()
 		{
 			var builder = new ContainerBuilder();
-			builder
-				.RegisterAssemblyTypes(this.GetType().Assembly)
+            var assemblies = AppDomain.CurrentDomain.GetAssemblies();
+            builder
+				.RegisterAssemblyTypes(assemblies)
 				.Where(t => t.IsSubclassOf(typeof (Command)))
 				.AsSelf();
 

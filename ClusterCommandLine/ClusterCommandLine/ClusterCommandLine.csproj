@@ -57,8 +57,6 @@
     <Compile Include="Exceptions\OptionNotValid.cs" />
     <Compile Include="Helper\OptionHelper.cs" />
     <Compile Include="Helper\StringHelper.cs" />
-    <Compile Include="Models\CommonOption.cs" />
-    <Compile Include="Models\Option.cs" />
     <Compile Include="Parser\CommandContainer.cs" />
     <Compile Include="Parser\ParseCommand.cs" />
     <Compile Include="Parser\ShowCommand.cs" />

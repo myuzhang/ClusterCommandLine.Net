@@ -5,20 +5,22 @@ namespace ClusterCommandLine
 {
     public abstract class Command
     {
-        public void HelpHeader()
+        public virtual void HelpHeader()
         {
-            Console.WriteLine(@"TCMX - Test Case Management eXtention Tool, Version 1.2");
-            Console.WriteLine(@"Copyright (c) DimensionData Corporation.  All rights reserved.");
-            Console.WriteLine();
-
-            Console.WriteLine(@"Notes of Command Option:");
-            Console.WriteLine(@"The command needs option 'collection' and 'teamproject',
-you can set it in the command line or in the local profile
-by using command 'tcmx config setlocal'");
+            Console.WriteLine(@"Cluster Command Set, Version 1.0");
+            Console.Write(@"GNU GENERAL PUBLIC LICENSE.");
+            Console.WriteLine(@"Copyright (C) 2007 Free Software Foundation");
             Console.WriteLine();
         }
 
-        public virtual void ActionHelpHeader() { }
+        public virtual void ActionHelpHeader()
+        {
+            Console.WriteLine(@"Notes of Command Option:");
+            Console.WriteLine(@"The first parameter is the command name");
+            Console.WriteLine(@"The second parameter is the command controller");
+            Console.WriteLine(@"The third parameter is the action name");
+            Console.WriteLine(@"The fourth parameter is the command option");
+        }
 
         public virtual void ActionHelpExample() { }
 

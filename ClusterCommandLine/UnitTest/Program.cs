@@ -7,7 +7,6 @@ namespace UnitTest
     {
         public static void Main(string[] args)
         {
-            var tryCommand = new TryCommand();
             ClusterCommand.Exec<Option>(args);
         }
     }

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ClusterCommandLine</id>
+    <version>$version$</version>
+    <title>Cluster Command Line</title>
+    <authors>Michael Zhang</authors>
+    <owners>Michael Zhang</owners>
+    <projectUrl>https://github.com/myuzhang/ClusterCommandLine.Net</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Easy to build a cluster command in the format of command.exe command.controller command.action command.options</description>
+    <releaseNotes>The first release.</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>CommandLine</tags>
+  </metadata>
+</package>

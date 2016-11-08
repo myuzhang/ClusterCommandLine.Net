@@ -30,3 +30,10 @@ The design is the same as WebAPI using attribute driven to define commandCluster
 ClusterCommand.Exec<Option>(args);
 ```
   Note the type Option is the class you defined for your command option.
+  
+####Step 7, You can add the command header, command action help and command action example in your logic class as you like,
+```
+public override void HelpHeader() - command header
+public override void ActionHelpHeader() - command action help
+public override void ActionHelpExample() - command action example
+```

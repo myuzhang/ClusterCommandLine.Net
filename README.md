@@ -2,10 +2,15 @@
 The project is providing a method to implement a command set.
 If you have needs to build a command set like this format:
 "commandName.exe commandCluster commandAction commandOption"
+
 Where:
+
 commandName.exe - is your command name, generally your project name/exe file name
+
 commandCluster - is the command set
+
 commandAction - is the command action for each of the command set
+
 commandOption - is the options for each of action, it can have required and optional options
 
 # How to use:

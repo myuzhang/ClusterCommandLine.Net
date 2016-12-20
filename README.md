@@ -22,7 +22,7 @@ The design is the same as WebAPI using attribute driven to define commandCluster
    Here are two parameters for the attribute: the first is for commandCluster name and the second is for commandOption which is the common option for all command actions in the class.
         You may also specify the help text for the cluster command.
         
-####Step 3, Inherit class Command. (refer to TryCommand.cs)
+####Step 3, Inherit from class Command. (refer to TryCommand.cs)
 
 ####Step 4, Add attribute "CommandRoute" to the command action method. Note that the action method must have one but only one input parameter. See next step to see the input parameter. (refer to TryCommand.cs)
   Here are two parameters for the attribute: the first is for the command action name and the second is for command option.
